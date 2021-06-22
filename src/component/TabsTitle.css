@@ -1,0 +1,28 @@
+.TabsTitle {
+    height: 5vh;    
+    display: flex;
+    justify-content: space-between;
+}
+
+.TabsTitleItemActive,
+.TabsTitleItem {
+    width: 25vw;
+    display: flex;
+    align-items: center;   
+    justify-content: center;
+    border: 1px solid lightgrey;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+
+.TabsTitleItemActive {
+    box-shadow: 0 2px 0 lightseagreen inset;
+    background-color: white;
+}
+
+.TabsTitleItem{   
+    background-color: lightgray;
+}
