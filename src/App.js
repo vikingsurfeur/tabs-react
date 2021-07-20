@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import './App.css';
-import TabsTitle from './component/TabsTitle';
-import TabsContent from './component/TabsContent';
+import React, { useState } from "react";
+import "./App.css";
+import TabsTitle from "./component/TabsTitle";
+import TabsContent from "./component/TabsContent";
 
 const tabsContent = [
   {
@@ -26,15 +26,13 @@ function App() {
   const [content, setContent] = useState(tabsContent[0].content);
 
   const handleTitleClick = (id, content) => {
-      setId(id);
-      setTimeout(() => {
-        setContent(content);
-      }, 250);
+    setId(id);
+    setContent(content);
   };
 
   return (
     <ul className="List">
-      <TabsTitle tabsContent={tabsContent} handleTitleClick={handleTitleClick} id={id}/>
+      <TabsTitle tabsContent={tabsContent} handleTitleClick={handleTitleClick} id={id} />
       <TabsContent content={content} />
     </ul>
   );
